@@ -12,6 +12,25 @@ Brief project description goes here.
 - **Android Architecture Components**: Set of libraries that help you design robust, testable, and maintainable apps.
 
 
+## Features
+
+### Internship Screen
+
+- Utilizes Paging library to fetch and display internship data.
+- Provides a list of internships with details such as internship title, company name, etc.
+- Supports pagination for a seamless user experience.
+
+### Internship Details Screen
+
+- Displays detailed information about a specific internship.
+- Includes internship description, company details, etc.
+
+### Search Screen
+
+- Allows users to search for internships based on various criteria.
+- Search can be performed on internship description, role, company type, etc.
+- Enhances user experience by providing a more focused internship search.
+
 
 ## License
 
