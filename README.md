@@ -31,6 +31,9 @@ This is a sample project based on Kotlin Multi - Platform
 - Search can be performed on internship description, role, company type, etc.
 - Enhances user experience by providing a more focused internship search.
 
+<img width="323" alt="Screenshot 2023-11-27 at 11 48 23 AM" src="https://github.com/Pulkitjndl/LearningApp/assets/40516537/a38e18c0-3c81-4e85-b36f-5c2c3dcac8c0">
+<img width="332" alt="Screenshot 2023-11-27 at 11 48 29 AM" src="https://github.com/Pulkitjndl/LearningApp/assets/40516537/f50bb0f0-d261-49f1-bc92-378e5c1e7bfe">
+<img width="339" alt="Screenshot 2023-11-27 at 11 48 47 AM" src="https://github.com/Pulkitjndl/LearningApp/assets/40516537/86397f59-3434-4ef7-a586-7333aa2d39db">
 
 ## License
 
