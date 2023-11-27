@@ -73,7 +73,7 @@ fun getIconForScreen(screen: Screen): ImageVector {
 
 @Composable
 fun getScreen(selectedScreen: Screen) = when (selectedScreen) {
-    Screen.INTERNSHIPS -> InternshipsScreen().content()
+    Screen.INTERNSHIPS -> InternshipsScreen().NavigationMain()
     Screen.JOBS -> JobsScreen()
     Screen.COURSES -> CoursesScreen()
     else -> HomeScreen()

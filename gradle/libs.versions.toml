@@ -40,6 +40,7 @@ ktor-serialization-kotlinx-json = { module = "io.ktor:ktor-serialization-kotlinx
 paging-common = { module = "app.cash.paging:paging-common", version.ref = "pagingCommonVersion" }
 paging-runtime-uikit = { module = "app.cash.paging:paging-runtime-uikit", version.ref = "pagingCommonVersion" }
 paging-compose-common = { module = "app.cash.paging:paging-compose-common", version.ref = "pagingCommonVersion" }
+androidx-navigation-runtime-ktx = { group = "androidx.navigation", name = "navigation-runtime-ktx", version = "2.7.5" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }

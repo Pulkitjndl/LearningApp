@@ -1,6 +1,8 @@
 package ui.internships
 
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -35,8 +37,8 @@ import ui.theme.Color as UiColor
 
 @ExperimentalResourceApi
 @Composable
-fun InternshipCard(internship: InternshipApiModel.Internship) {
-    Column(modifier = Modifier.fillMaxWidth().padding(16.dp)) {
+fun InternshipCard(internship: InternshipApiModel.Internship, onClick: (internship:InternshipApiModel.Internship) -> Unit) {
+    Column(modifier = Modifier.fillMaxWidth().clickable { onClick(internship) }.padding(16.dp)) {
         Row(
             modifier = Modifier.fillMaxWidth(),
             horizontalArrangement = Arrangement.SpaceBetween,
@@ -125,18 +127,16 @@ fun InternshipCard(internship: InternshipApiModel.Internship) {
 
         Spacer(Modifier.height(16.dp))
         Row {
-            internship.labels?.map { label ->
-                Surface(
-                    shape = MaterialTheme.shapes.medium,
-                    color = UiColor.background,
-                    contentColor = Color.DarkGray
-                ) {
-                    Text(
-                        text = label,
-                        modifier = Modifier.padding(horizontal = 6.dp, vertical = 4.dp),
-                        fontSize = 13.sp
-                    )
-                }
+            internship.labels?.forEach { label ->
+                Text(
+                    text = label,
+                    modifier = Modifier
+                        .padding(horizontal = 6.dp, vertical = 4.dp)
+                        .background(color = UiColor.background, shape = MaterialTheme.shapes.medium)
+                        .padding(horizontal = 10.dp, vertical = 6.dp),
+                    fontSize = 13.sp,
+                    color = Color.DarkGray
+                )
                 Spacer(Modifier.width(8.dp))
             }
         }

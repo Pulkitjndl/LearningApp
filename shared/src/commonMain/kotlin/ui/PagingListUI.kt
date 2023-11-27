@@ -6,7 +6,6 @@ import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -28,12 +27,13 @@ import app.cash.paging.LoadStateError
 import app.cash.paging.LoadStateLoading
 import app.cash.paging.LoadStateNotLoading
 import app.cash.paging.compose.LazyPagingItems
+import data.InternshipApiModel
 import ui.theme.Color as UiColor
 
 @Composable
 fun <T : Any> PagingListUI(
     data: LazyPagingItems<T>,
-    content: @Composable (T) -> Unit
+    content: @Composable (T, onClick: (internship:InternshipApiModel.Internship) -> Unit) -> Unit
 ) {
     LazyColumn(
         modifier = Modifier
@@ -44,7 +44,9 @@ fun <T : Any> PagingListUI(
 
         items(data.itemCount) { index ->
             val item = data[index]
-            item?.let { content(it) }
+            item?.let { content(it){
+                print("Item clicked - $it")
+            } }
             Divider(
                 color = UiColor.background,
                 thickness = 10.dp,

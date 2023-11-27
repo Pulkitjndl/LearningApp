@@ -49,4 +49,7 @@ dependencies {
     implementation(libs.koin.android)
     implementation(libs.koin.androidx.compose)
     debugImplementation(libs.compose.ui.tooling)
+    implementation ("androidx.navigation:navigation-compose:2.7.4")
+    implementation ("androidx.hilt:hilt-navigation-compose:1.0.0")
+    implementation ("com.chrynan.navigation:navigation-core:0.10.0")
 }

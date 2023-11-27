@@ -41,6 +41,7 @@ kotlin {
                 implementation(libs.paging.compose.common)
                 api(libs.kmm.viewmodel.core)
                 implementation(libs.kamel.image)
+                implementation("com.chrynan.navigation:navigation-compose:0.10.0")
             }
         }
         val commonTest by getting {
