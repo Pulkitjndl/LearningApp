@@ -1,6 +1,6 @@
 # LearningApp
 
-Brief project description goes here.
+This is a sample project based on Kotlin Multi - Platform
 
 ## Tech Stack
 
