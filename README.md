@@ -1,6 +1,6 @@
 # LearningApp
 
-This is a sample project based on Kotlin Multi - Platform
+This is a sample project based on Compose Multi Platform
 
 ## Tech Stack
 
